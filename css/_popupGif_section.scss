@@ -56,6 +56,12 @@
             flex-wrap: nowrap;
             justify-content: space-around;
             align-items: center;
+            .btn-fav{
+                height: 36px;
+                width: 36px;
+                border: 1px solid #9CAFC3;
+            }
+
             .btn-download{
                 height: 36px;
                 width: 36px;
@@ -110,7 +116,7 @@
             .gif__btns{
                 .btn-fav{
                     margin:0 20px;
-                    border:none;
+                    // border:none;
                 }
     
             }   

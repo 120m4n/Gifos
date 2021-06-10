@@ -64,9 +64,10 @@ button{
 }
 
 .fav-active {
-    background-size: auto;
-    background-image: url(../assets/icon-fav-active.svg);
+    // background-size: auto;
     background-color: #FFFFFF;
+    background-image: url(../assets/icon-fav-active.svg);
+    // 
   }
   
 .trash {

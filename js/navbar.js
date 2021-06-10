@@ -35,10 +35,14 @@ $btnfav.addEventListener('click', (event) => {
   event.stopPropagation();
 });
 
+//home initial 
 $home.addEventListener('click', (event) => {
   $section__main.classList.remove('hidden');
   $section__search.classList.remove('hidden');
   $section__favorites.classList.add('hidden');
+
+  $search_container.classList.add('hidden');
+  $bar_input.value = '';
   
   defaultSearchSection();
   offsetFavs = 12;

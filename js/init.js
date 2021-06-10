@@ -5,9 +5,9 @@ getApiInfo(urlTrendingTerms).then(data => {
     $trendingStrings.innerHTML = '';
     for (var i = 0; i < 5; i++) {
         if (i < 4) {
-            $trendingStrings.innerHTML += `<a href="#" class="link">${data[i].charAt(0).toUpperCase()}${data[i].slice(1)}</a>, `;
+            $trendingStrings.innerHTML += `<a href="#section-main" class="link">${data[i].charAt(0).toUpperCase()}${data[i].slice(1)}</a>, `;
         } else {
-            $trendingStrings.innerHTML += `<a href="#" class="link">${data[i].charAt(0).toUpperCase()}${data[i].slice(1)}</a>.`;
+            $trendingStrings.innerHTML += `<a href="#section-main" class="link">${data[i].charAt(0).toUpperCase()}${data[i].slice(1)}</a>.`;
         }
     }
 
