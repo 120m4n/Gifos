@@ -1,0 +1,67 @@
+.section__main{
+
+    background-color: var(--color-primary);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color:var(--color-font);
+    text-align: center;
+
+    //height: 470px;
+
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+    .section__main--header{
+        width: 286px;
+        height: 99px;
+    }
+
+    .section__main--image{
+        width: 273px;
+        height: 130px;
+        background-size:contain;
+        background-image: url(../assets/ilustra_header.svg);
+        background-repeat: no-repeat;
+    }
+
+
+
+    &.hidden{
+        display: none;
+    }
+
+}
+
+
+@media all and (min-width: 768px) {
+
+    .section__main{
+
+        //height: 665px;
+        justify-content:space-evenly;
+
+        .section__main--header{
+
+            padding: 0 180px;
+            width: 100%;
+            font-size: 35px;
+            text-align: center;
+            line-height: 50px;
+            max-width: 934px;
+            height: 100px;
+        }            
+        .section__main--image{
+            width: 399px;
+            height: 190px;
+
+        }
+
+
+    }
+}

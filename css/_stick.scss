@@ -1,0 +1,78 @@
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: show;
+    transition: all 0.2s;
+    border: none;
+    background-color: transparent;
+}
+
+.arrow{
+    width:40px;
+    height:40px;
+}
+
+.btn{
+    border: none;
+    border-radius:6px;
+    height:32px;
+    width:32px;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.2);  
+    }
+}
+
+.btn-close{
+    height:24px;
+    width:24px;
+    cursor: pointer;
+    background-image: var(--btn-close)
+
+}
+
+.btn-max{
+    background-image: url(../assets/icon-max-normal.svg);
+    &:hover{
+        background-image: url(../assets/icon-max-hover.svg);  
+    } 
+}
+
+.btn-fav{
+    background-image: url(../assets/icon-fav.svg);
+    // &:hover{
+    //     background-image: url(../assets/icon-fav-hover.svg);  
+    // }
+
+}
+  
+
+.btn-download{
+    margin: 0 10px;
+    background-image: url(../assets/icon-download.svg);
+    &:hover{
+        background-image: url(../assets/icon-download-hover.svg);  
+    }
+}
+
+.fav-active {
+    background-size: auto;
+    background-image: url(../assets/icon-fav-active.svg);
+    background-color: #FFFFFF;
+  }
+  
+.trash {
+    background-image: url(../assets/icon-trash-normal.svg);
+    &:hover{
+        background-image: url(../assets/icon-trash-hover.svg);
+    }
+
+}

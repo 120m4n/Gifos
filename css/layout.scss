@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+@import 'default';
+@import 'stick';
+@import 'theme';
+@import 'menu';
+@import 'main_section';
+@import 'gifos_section';
+@import 'popupGif_section';
+@import 'favorites_section';
+@import 'search_section';
+
+
+.txt-highlight{
+    color: var(--color-highlight);
+}
+
+.frame--header,
+.frame--footer{
+    height: 5px;
+    width: 100%;
+    background-color: var(--color-frame);
+}
+
+
+
+
+.footer{
+    height: 196px;
+    // width: 100%;
+    background-color: var(--color-primary); 
+    color: var(--color-font-footer);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        text-decoration: none;
+        margin: 0 9px;
+    }
+    .icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-size: cover;
+      }
+
+    .footer_icons--face{
+        background-image: var(--face-svg);
+        background-repeat: no-repeat;
+    }
+
+    .footer_icons--face:hover,
+    .footer_icons--face:focus {
+        background-image: var(--face-svg-hover);
+    }
+
+    .footer_icons--twitter{
+        background-image: var(--twitter-svg);
+        background-repeat: no-repeat;
+
+    }
+
+    .footer_icons--twitter:hover,
+    .footer_icons--twitter:focus{
+        background-image: var(--twitter-svg-hover);
+    }
+    .footer_icons--instagram{
+        background-image: var(--instagram-svg);
+        background-repeat: no-repeat;
+
+    }
+
+    .footer_icons--instagram:hover,
+    .footer_icons--twitter:focus{
+        background-image: var(--instagram-svg-hover);
+    }
+
+    .footer__text{
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 18px;
+        position: relative;
+        top:47px;
+
+    }
+    .footer__copyright{
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+        position: relative;
+        bottom: 23px;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+    .footer{
+        height:116px;
+       flex-flow: row nowrap;
+       justify-content: space-evenly;
+
+       .footer__text{
+           position: initial;
+           font-size: 13px;
+       }
+       .footer__copyright{
+           position: initial;
+           font-size: 13px;
+       }
+
+       .icon {
+           position: relative;
+           left: -120px;
+       }
+
+
+    }
+
+}

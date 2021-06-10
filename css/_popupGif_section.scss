@@ -1,0 +1,121 @@
+.popupGif{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 18;
+    .popupGif__container{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        .btn-close{
+             margin-bottom: 73px;
+             position: relative;
+             left:288px;
+
+        }
+       .popupGif__container--img{
+           .popupGif__img{
+            height: 245px;
+            width: 318px;
+           }
+
+       } 
+       .popupGif__container__actions{
+           display: flex;
+           flex-flow: row nowrap;
+           justify-content: space-between;
+           margin-top: 17px;
+           width: 318px;
+        .gif__info{
+            
+
+            .gif_user{
+                font-family: Roboto;
+                font-weight: 500;
+                font-size: 15px;
+                color: #000000;
+
+            }
+            .gif_title{
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 16px;
+                color: #000000;
+
+            }
+        } 
+        .gif__btns{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            .btn-download{
+                height: 36px;
+                width: 36px;
+                border: 1px solid #9CAFC3;
+                
+            }
+
+        }   
+       }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .popupGif{
+
+        .popupGif__container{
+
+            .btn-close{
+                left: 100%;           
+            }
+           .popupGif__container--img{
+               .popupGif__img{
+                height: 385px;
+                width: 695px;
+               }
+    
+           } 
+           .popupGif__container__actions{
+               display: flex;
+               flex-flow: row nowrap;
+               justify-content: space-between;
+               margin-top: 17px;
+               width: 695px;
+            .gif__info{
+                
+    
+                .gif_user{
+                    font-family: Roboto;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #000000;
+    
+                }
+                .gif_title{
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #000000;
+    
+                }
+            } 
+            .gif__btns{
+                .btn-fav{
+                    margin:0 20px;
+                    border:none;
+                }
+    
+            }   
+           }
+        }
+    }
+
+}

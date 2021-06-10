@@ -1,0 +1,73 @@
+.theme--dark{
+    --color-frame : #000000;
+    --color-primary: #37383C;
+    --color-secondary: #222326;
+    --color-trending:#222326;
+    --color-font:  #FFFFFF;
+    --color-font-nav: #FFFFFF;
+    --color-font-nav_mobile: #FFFFFF;
+    --color-font-footer: #FFFFFF;
+    --face-svg: url(../assets/icon_facebook.svg);
+    --twitter-svg: url(../assets/icon_twitter.svg);
+    --instagram-svg: url(../assets/icon_instagram.svg);
+    --face-svg-hover: url(../assets/icon_facebook_noc_hover.svg);
+    --twitter-svg-hover: url(../assets/icon_twitter_noc_hover.svg);
+    --instagram-svg-hover: url(../assets/icon_instagram_noc_hover.svg);
+    --logo-mobile: url(../assets/logo-mobile-modo-noct.svg);
+    --logo-desktop: url(../assets/Logo-modo-noc.svg);
+    --menu-svg: url(../assets/burger-modo-noct.svg);
+    --menu-svg-close: url(../assets/close-modo-noct.svg);
+    --search-svg: url(../assets/icon-search.svg);
+    --background: #000000;
+    --color-highlight: #50E3C2;
+    --color-overlay: rgb(87 46 229 / 80%);
+    --btn-slider-left: url(../assets/button-slider-left-md-noct.svg);
+    --btn-slider-right: url(../assets/button-slider-right-md-noct.svg);
+    --btn-close: url(../assets/close.svg);
+    --btn-more: url(../assets/CTA-ver+-modo-noc.svg);
+    --btn-more-hover: url(../assets/CTA-ver+hover-modo-noc.svg);
+    --btn-search: url(../assets/icon-search-mod-noc.svg);
+
+
+}
+
+.theme--light{
+    --color-frame: #572EE5;
+    --color-primary: #FFFFFF;
+    --color-secondary: #F3F5F8;
+    --color-trending:#F3F5F8;
+    
+    --color-font:  #572EE5;
+    --color-font-footer: #000000;
+
+    --color-font-nav: #572EE5;
+    --color-font-nav_mobile: #FFFFFF;
+
+    --face-svg: url(../assets/icon_facebook.svg);
+    --twitter-svg: url(../assets/icon_twitter.svg);
+    --instagram-svg: url(../assets/icon_instagram.svg);
+    --face-svg-hover: url(../assets/icon_facebook_hover.svg);
+    --twitter-svg-hover: url(../assets/icon_twitter_hover.svg);
+    --instagram-svg-hover: url(../assets/icon_instagram_hover.svg);
+    --logo-mobile: url(../assets/logo-mobile.svg);
+    --logo-desktop: url(../assets/logo-desktop.svg);
+    --menu-svg: url(../assets/burger.svg);
+    --menu-svg-close: url(../assets/close.svg);
+    --search-svg: url(../assets/icon-search.svg);
+    --background: rgba(87,46,229,0.90);
+    --color-highlight: #50E3C2;
+    --color-overlay: rgb(87 46 229 / 80%);
+    --btn-slider-left: url(../assets/button-slider-left.svg);
+    --btn-slider-right: url(../assets/Button-Slider-right.svg);
+    --btn-close: url(../assets/close.svg);
+    --btn-more: url(../assets/CTA-ver-mas.svg);
+    --btn-more-hover: url(../assets/CTA-ver-mas-hover.svg);
+    --btn-search: url(../assets/icon-search.svg);
+    // cursor: pointer;
+}
+
+// .theme--light,
+// .theme--dark {
+//     --icon-search: url(../assets/icon-search-item.svg);
+// }
+

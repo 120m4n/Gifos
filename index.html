@@ -4,15 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GIFOS</title>
+    <link rel="icon" href="assets/logo-mobile.svg">
+    <script src="https://kit.fontawesome.com/bd0a3f9594.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- <link rel="stylesheet" href="./css/menu.css"> -->
 </head>
-<body>
-    <div class="frame--header"></div>
-    <div class="navbar"></div>
-    <section class="main"></section>
-    <section class="gifos"></section>
-    <div class="footer"></div>
-    <div class="frame--footer"></div>
+<body class="theme--light">
+    <header>
+        <div class="frame--header"></div> 
+        
+        <div class="navbar__menu">
+            <div class="navbar__menu--logo"></div>
+            
+            <nav id="navbar__nav" class="navbar__nav">
+                <ul class="navbar__links">
+                    <li><a class="link" id="navbar__btn--dark" href="#">Modo Nocturno</a></li>
+                    <li><a class="link" id="fav__btn" href="#">Favoritos</a></li>
+                    <li><a class="link" id="mygifos__btn" href="#">Mis GIFOS</a></li>
+                    <li><a id="creategif__btn" href="#">+</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__menu--burger"></div>
+        </div>
+    </header>
+    <div id="section-main" class="section__main">
+        <div class="section__main--header">
+            Inspírate, busca, guarda, y crea los mejores <span class="txt-highlight">GIFOS</span> 
+        </div>
+        <div class="section__main--image"></div>
+    </div>
 
+    <div class="section__search">
+        <div id="section__search__bar" class="section__search__bar">
+            <div id="bar-field"  class="bar--field">
+                <input id="bar-input" class="bar--input" enterkeyhint="done" autocomplete="off" type="text" placeholder="Busca GIFOS y más..." onblur="this.placeholder='Busca GIFOS y más...'">
+                <button id="bar-btn"  class="btn bar--btn"></button>
+                <button id="bar-btn-close" class="btn bar--btn-close hide"></button>
+            </div>
+        
+            <div id="bar-suggest-list" class="bar--suggest-list hide">
+                <div id="suggest-list-item"class="suggest__item hidden">
+                    <div id="suggest__item--icon" class="suggest__item--icon"></div>
+                    <p id="suggest__item--txt">avelardo de la espriella</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section__search__trending">
+            <div class="section__search__trending--heading">Trending:</div>
+            <div class="section__search__trending-s">
+                Reactions, Entertainment, Sports, Stickers, Artists
+            </div>
+        </div>
+        <div class="section__search__container">
+            <div class="separator hide"></div>
+            <h2 class="section__search--text hide">Lorem Ipsum</h2>
+            <div class="section__search--no_results hidden">
+                <img src="assets/icon-busqueda-sin-resultado.svg" alt="Búsqueda sin resultado">
+                <h3>Intenta con otra búsqueda</h3>
+            </div>
+            <div class="section__search__gifcards--container"></div>
+            <button id="search-gifs-btn-more" class="btn-more hidden"></button>
+        </div>
+
+
+    </div>
+
+    <div class="section__favorites hidden">
+        <div class="section__favorites--title">
+            <img src="assets/icon-favoritos.svg" alt="Icono Favoritos">
+            <h2>Favoritos</h2>
+        </div>
+
+        <div class="section__favorites__result--empty">
+            <img src="assets/icon-fav-sin-contenido.svg" alt="Icono Favoritos sin Contenido">
+            <p>"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"</p>
+        </div>
+
+        <div id="fav-gifs-results" class="section__favorites__gifcards--container">
+        </div>
+
+        <button id="fav-gifs-btn-more" class="btn-more"></button>
+    </div>
+
+    
+    <div class="section__gifos">
+        <h2>Trending GIFOS</h2>
+        <div class="gifos_text">
+            <span>Mira los últimos</span><span> GIFOS de nuestra comunidad.</span>
+        </div>
+        
+        
+        <div id="slider-container" >
+            <button class="arrow btn-left"></button>
+            <!-- <div id="trending-gifs"> -->
+                <div id="trending-gifs-container" class="wrapperx">
+                    <!-- <div class="gifcard-container"> -->
+                        <div class="gifcard-template hide" gifid="template">
+                            <img class="gifcard__img" src="" alt="Gif">
+                            <div class="gifcard-overlay">
+                                <div class="gifcard-overlay__bar-btns">
+                                    <button class="btn btn-fav"></button>
+                                    <button class="btn btn-download"></button>
+                                    <button class="btn btn-max"></button>
+                                </div>
+                                <div class="gifcard-overlay__info">
+                                    <h4 class="gifcard-overlay__info-user">User</h4>
+                                    <h3 class="gifcard-overlay__info-title">Titulo GIFO</h3>
+                                </div>
+                            </div>
+                        </div>                  
+                </div>
+            <!-- </div> -->
+            <button class="arrow btn-right">
+                <!-- <img src="assets/Button-Slider-right.svg" alt="Boton Maximizar Gif"> -->
+            </button>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer__text">Compartir en:</div>
+        <div class="footer__icons">
+            <a href="https://www.facebook.com/"> 
+                <!-- <i class="fab fa-facebook-f"></i> -->
+                <!-- <img src="icon_facebook.svg" alt=""> -->
+                <span class="icon footer_icons--face"></span>
+            </a> 
+            <a href="https://www.twitter.com/"> 
+                <!-- <i class="icon fab fa-twitter"></i> -->
+                <span class="icon footer_icons--twitter"></span>
+            </a> 
+            <a href="https://www.instagram.com/"> 
+                <!-- <i class="icon fab fa-instagram"></i> -->
+                <span class="icon footer_icons--instagram"></span>
+            </a> 
+
+        </div>
+        <div class="footer__copyright">© GIFOS 2020 All Rights Reserved.</div>
+    </div>
+
+    <div class="hide" id="popupGif" >
+        <div class="popupGif__container">
+            <button class="btn-close" onclick="closeMaximized()">
+                <!-- <img src="assets/close.svg" alt="Boton Cerrar Gif">     -->
+            </button>
+    
+            <div class="popupGif__container--img">
+                <img class="popupGif__img" src="" alt="Imagen Gif">
+            </div>
+            
+    
+            <div class="popupGif__container__actions">
+                <div class="gif__info">
+                    <p class="gif_user">user</p>
+                    <p class="gif_title">Tittle</p>
+                </div>
+                <div class="gif__btns">
+                    <button class="btn btn-fav">
+                        <!-- <img src="assets/icon-fav.svg" alt="Boton Favoritos Gif"> -->
+                    </button>
+                    <button class="btn btn-download">
+                        <!-- <img src="assets/icon-download.svg" alt="Boton Download Gif"> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="frame--footer"></div>
+    <script src="./js/RecordRTC.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/save_storage.js"></script>
+    <script src="./js/giphy_api.js"></script>
+    <script src="./js/changeTheme.js"></script>
+    <script src="./js/popupGif.js"></script>
+    <script src="./js/gifcard.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/favorities.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/searchEngine.js"></script>
 </body>
 </html>
