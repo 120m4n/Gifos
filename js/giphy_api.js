@@ -9,6 +9,9 @@ let api_key = 'deN938U4Ef66YPDtShWaEralFVTOaOlc',
     urlTrendingGifs = `${urlApi}/gifs/trending?api_key=${api_key}&limit=12`,
     urlSrchSuggests = `${urlApi}/gifs/search/tags?api_key=${api_key}&q=`;
     urlTrendingTerms = `${urlApi}/trending/searches?api_key=${api_key}`;
+
+// --endpoint upload gif
+const uploadGifEndpoint = 'https://upload.giphy.com/v1/gifs';
     
 
 async function getApiInfo(url) {

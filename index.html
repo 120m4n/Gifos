@@ -22,7 +22,9 @@
                     <li><a class="link" id="navbar__btn--dark" href="#">Modo Nocturno</a></li>
                     <li><a class="link" id="fav__btn" href="#">Favoritos</a></li>
                     <li><a class="link" id="mygifos__btn" href="#">Mis GIFOS</a></li>
-                    <li><a id="creategif__btn" href="#">+</a></li>
+                    <li><a id="creategif__btn" href="#">
+                        <div class="btn-crear" id="crear__btn"></div>
+                    </a></li>
                 </ul>
             </nav>
             <div class="navbar__menu--burger"></div>
@@ -89,8 +91,100 @@
         <button id="fav-gifs-btn-more" class="btn-more"></button>
     </div>
 
+     <!-- Crear gifs -->
+	<div class="crearGif hidden" id="createGifSection">
+
+		<div class="crearGif__container">
+
+			<!-- cámara -->
+			<div class="crearGif__camara">
+				<img class="camera" id="camera" src="" alt="cámara filmadora ilustrativa">
+				<img class="path" id="path" src="assets/element-luz-camara.svg" alt="luz de camara filmadora">
+			</div>
+
+			<!-- recuadro de grabación -->
+			<div class="crearGif__recordingZone">
+
+				<!-- bordes para estilos -->
+				<div class="corner top--left"></div>
+				<div class="corner top--right"></div>
+				<div class="corner bottom--left"></div>
+				<div class="corner bottom--right"></div>
+
+
+				<!-- recuadro de grabación -->
+				<div class="crearGif__recordingZone__content">
+
+                    <!-- Mensaje inicial -->
+
+                    <div class="MessageBox">
+                        <h3 class="crearGif__title" id="crearGif_title">Aquí podrás <br> crear tus propios <span
+                                class="aqua-text">GIFOS</span> </h3>
+                        <p class="crearGif__text" id="crearGif_text">¡Crea tu GIFO en solo 3 pasos! <br> (solo necesitas
+                            una
+                            cámara para grabar un video)</p>
+                    </div>
+
+					<!-- PARA QUE EL VIDEO SE ACOMODE ACA MIENTRAS GRABA -->
+
+					<video class="recording_video hidden" src="" id="recording_video"></video>
+
+                    <div class="raw-gif hidden" id="raw-gif">
+                        <img class="recorded_video" src="https://media1.giphy.com/media/jVQIlQNUufPPYDzKDZ/giphy.gif" id="recorded_gifo" ></img>
+                        <div class="overlay" id="overlay">
+
+                            <!--  -->
+
+                            <div class="overlay__bar-btns hidden" id="overlay_bar" >
+                                <button class="btn btn-download"></button>
+                                <button class="btn btn-link" onclick="console.log('linkMisGifos')" ></button>
+                              </div>
+                            <div class="overlay__info hidden" id="overlay_info">
+                                <img src="../assets/loader.svg" class="overlay__status-icon" alt="loading gifo" id="overlay_status-icon">
+                                <p class="overlay__status-text" id="overlay_status-text">Estamos subiendo tu GIFO</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+			<!-- celuloide -->
+
+			<div class="crearGif__celluloidFilm">
+				<img class="celuloide" id="celuloide" src="assets/pelicula.svg" alt="celuloide ilustracion">
+			</div>
+
+		</div>
+
+        <div class="record_status">
+            <div class="pagination">
+                <p class="step" id="step-1">1</p>
+                <p class="step" id="step-2">2</p>
+                <p class="step" id="step-3">3</p>
+            </div>
+
+
+            <div class="timer">
+                <p class="timer__text hidden" id="timer-recording">00:00:00</p>
+                <a href="" class="timer__text hidden" id="repeatShot">REPETIR CAPTURA</a>
+            </div>
+        </div>
+
+		<!-- linea decorativa -->
+		<hr class="border">
+
+		<!-- botones -->
+		<div class="button_container">
+			<button class="button " id="button--comenzar">COMENZAR</button>
+			<button class="button " id="button--grabar">GRABAR</button>
+			<button class="button " id="button--finalizar">FINALIZAR</button>
+			<button class="button " id="button--subirGif">SUBIR GIFO</button>
+		</div>
+	</div>
+
     
-    <div class="section__gifos">
+    <div class="section__gifos" id="section_gifos_slider">
         <h2>Trending GIFOS</h2>
         <div class="gifos_text">
             <span>Mira los últimos</span><span> GIFOS de nuestra comunidad.</span>
@@ -185,5 +279,6 @@
     <script src="./js/favorities.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/searchEngine.js"></script>
+    <script src="./js/gif_create.js"></script>
 </body>
 </html>

@@ -1,0 +1,342 @@
+.crearGif {
+
+	&__container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__camara {
+		max-width: 25%;
+		width: 200px;
+		display: flex;
+		flex-flow: row nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		img.camera{
+			content: var(--camera-svg)
+		}
+		img.path{
+			content: var(--element-luz)
+		}
+	}
+
+	&__celluloidFilm {
+		max-width: 25%;
+		width: 200px;
+		height: 390px;
+		position: relative;
+		img{
+			position: absolute;
+			bottom: -80px;
+			right: 0;
+			&.celuloide{
+				content: var(--pelicula-svg)
+			}
+		}
+		// height: 20rem;
+		// padding-top: 18rem;
+		// padding-left: 1.5rem;
+	}
+
+	&__recordingZone {
+		padding: 2rem;
+		width: 688px;
+		height: 390px;
+		border: 1px solid var(--color-font);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+		align-items: center;
+		position: relative;
+
+	}
+
+	.MessageBox{
+		.crearGif__title{
+			font-family: Montserrat, Roboto;
+			font-weight: 700;
+			font-size: 25px;
+			color: var(--color-font);
+			text-align: center;
+			line-height: 35px;
+
+			.aqua-text{
+				color: #50E3C2;
+			}
+
+		}
+		.crearGif__text{
+			font-family: Roboto;
+			font-weight: 500;
+			font-size: 16px;
+			color: #000000;
+			text-align: center;
+			line-height: 29px;
+
+		}
+	}
+
+	// &__title {
+	// 	font-family: roboto;
+	// }
+
+	// &__text {
+	// 	padding-top: 10px;
+	// 	color: #000;
+
+	// 	body.darkMode & {
+	// 		color: #fff;
+	// 	}
+	// }
+
+	.recording_video {
+		width: 480px;
+		background-color: aliceblue;
+		height: 320px;
+		z-index: 3000;
+	}
+
+	.raw-gif{
+		width:480px;
+		height: 320px;
+		position: relative;
+
+
+	
+		.overlay{
+			position: absolute;
+			top: 0;
+			
+			width: 100%;
+			height: 100%;
+
+			font-family: Montserrat-Bold;
+			font-size: 15px;
+			color: #FFFFFF;
+			text-align: center;
+
+			display: flex;
+			// height: 100%;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			&.blur{
+				background-color: rgba(87,46,229,0.90);
+			}
+
+			.overlay__info{
+				font-family: Montserrat;
+				font-weight: 700;
+				font-size: 15px;
+				color: var(--color-font-nav_mobile);
+				text-align: center;
+			}
+			.overlay__bar-btns{
+
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 12px;
+
+				.btn{
+					border: none;
+					border-radius:6px;
+					height:32px;
+					width:32px;
+					cursor: pointer;
+				}
+
+				.btn-download{
+					background-image: url('../assets/icon-download.svg');
+					&:hover{
+						transform: scale(1.2);  
+						background-image: url('../assets/icon-download-hover.svg');
+					}
+				}
+				.btn-link{
+					background-image: url('../assets/icon-link-normal.svg');
+					&:hover{
+						transform: scale(1.2);  
+						background-image: url('../assets/icon-link-hover.svg');
+					}
+				}
+			}
+			
+
+		}
+	}
+
+
+
+	.record_status{
+		width: 688px;
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.pagination {
+		margin: 0 auto;
+		width: 75%;
+		width: fit-content;
+		justify-self: flex-end;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		text-align: center;
+
+		.step {
+			width: 2rem;
+			height: 2rem;
+			padding-top: 0.2em;
+			margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+			border: 1px solid var(--color-font);
+			border-radius: 50%;
+			color: var(--color-font);
+
+			font-family: Roboto;
+			font-weight: 500;
+			font-size: 18px;
+			text-align: center;
+
+		}
+
+		.step-active {
+			background-color: var(--color-font-nav);
+			color: var(--color-step);
+		}
+	}
+	#repeatShot {
+		color: var(--color-font);
+		text-decoration: none;
+
+		&:hover {
+			border-bottom: 2px solid var(--color-highlight);
+		}
+
+		&:active {
+			color: gray;
+			border-bottom: hidden;
+		}
+	}
+
+	.timer {
+		width: 25%;
+		text-align: right;
+		position: absolute;
+		// top: 79%;
+		right: 0;
+
+		.timer__text {
+			font-family: Montserrat;
+			font-weight: 700;
+			font-size: 15px;
+			color: var(--color-font);
+			letter-spacing: 0;
+			text-align: right;
+			line-height: 22px;
+		}
+	}
+
+	.corner {
+		width: 1.7rem;
+		height: 1.7rem;
+		position: absolute;
+	}
+	.top--left {
+		border-top: 1px solid var(--color-highlight);
+		border-left: 1px solid var(--color-highlight);
+		top: 1.25rem;
+		left: 1.25rem;
+	}
+	.top--right {
+		border-top: 1px solid var(--color-highlight);
+		border-right: 1px solid var(--color-highlight);
+		top: 1.25rem;
+		right: 1.25rem;
+	}
+	.bottom--right {
+		border-bottom: 1px solid var(--color-highlight);
+		border-right: 1px solid var(--color-highlight);
+		bottom: 1.25rem;
+		right: 1.25rem;
+	}
+	.bottom--left {
+		border-bottom: 1px solid var(--color-highlight);
+		border-left: 1px solid var(--color-highlight);
+		bottom: 1.25rem;
+		left: 1.25rem;
+	}
+
+	.border {
+		width: 58%;
+		margin: 0 auto;
+		border: 2px solid var(--color-font-nav);
+	}
+
+	.button_container{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		
+		.button{
+			width:127px;
+			height:50px;
+			margin-top: 78px;
+			margin-bottom: 26px;
+			font-size: 13px;
+			text-transform: uppercase;
+			border-radius: 25px;
+			border: 1px solid var(--color-font);
+			margin-top: 20px;
+			color: var(--color-font);
+
+			font-family: Montserrat;
+			font-weight: 700;
+			letter-spacing: 0;
+			text-align: center;
+
+			
+			// background-image: var(--btn-more);
+			// background-color: #fff; //ajustar el color de los botones
+			&:hover {
+				cursor: pointer;
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+				background-color: var(--color-font-nav);
+				color: var(--color-step);
+			}
+			
+		}
+		
+
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.hidden{
+	display: none;
+}
+
+// *{
+//     margin:0;
+//     padding:0;
+//     box-sizing: border-box;
+//     max-width: 1440px;
+//   //   height: 1200px;
+//   }

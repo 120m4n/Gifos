@@ -7,6 +7,7 @@
     --color-font-nav: #FFFFFF;
     --color-font-nav_mobile: #FFFFFF;
     --color-font-footer: #FFFFFF;
+    --color-step:#000000;
     --face-svg: url(../assets/icon_facebook.svg);
     --twitter-svg: url(../assets/icon_twitter.svg);
     --instagram-svg: url(../assets/icon_instagram.svg);
@@ -27,6 +28,13 @@
     --btn-more: url(../assets/CTA-ver+-modo-noc.svg);
     --btn-more-hover: url(../assets/CTA-ver+hover-modo-noc.svg);
     --btn-search: url(../assets/icon-search-mod-noc.svg);
+    --btn-crear: url(../assets/CTA-crear-gifo-modo-noc.svg);
+    --btn-crear-hover:url(../assets/CTA-crear-gifo-hover-modo-noc.svg);
+    --camera-svg:url(../assets/camara-modo-noc.svg);
+    --element-luz:url(../assets/element-luz-camara.svg);
+    --pelicula-svg:url(../assets/pelicula-modo-noc.svg);
+    
+    
 
 
 }
@@ -42,6 +50,8 @@
 
     --color-font-nav: #572EE5;
     --color-font-nav_mobile: #FFFFFF;
+
+    --color-step:#FFFFFF;
 
     --face-svg: url(../assets/icon_facebook.svg);
     --twitter-svg: url(../assets/icon_twitter.svg);
@@ -63,6 +73,11 @@
     --btn-more: url(../assets/CTA-ver-mas.svg);
     --btn-more-hover: url(../assets/CTA-ver-mas-hover.svg);
     --btn-search: url(../assets/icon-search.svg);
+    --btn-crear : url(../assets/button-crear-gifo.svg);
+    --btn-crear-hover:url(../assets/CTA-crear-gifo-hover.svg);
+    --camera-svg:url(../assets/camara.svg);
+    --element-luz:url(../assets/element-luz-camara.svg);
+    --pelicula-svg:url(../assets/pelicula.svg);
     // cursor: pointer;
 }
 

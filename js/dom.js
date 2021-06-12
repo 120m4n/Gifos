@@ -4,6 +4,7 @@ const $home = document.querySelector(".navbar__menu--logo");
 const $btndark = document.querySelector("#navbar__btn--dark");
 const $btnfav = document.querySelector("#fav__btn");
 const $navbar__nav = document.querySelector(".navbar__nav");
+const $btncrear = document.querySelector("#crear__btn")
 
 let menuDisplayed = false;
 let searchOffset;
@@ -33,7 +34,8 @@ const $gifCardTemplate = document.querySelector('.gifcard-template');
 
 //DOM trending-gifs-container
 const $trending_gifs_container = document.getElementById('trending-gifs-container');
-
+//DOM section gifos_slider
+const $section_gifos_slider = document.querySelector('#section_gifos_slider');
 
 //DOM searching section
 const $section__search = document.querySelector('.section__search');
@@ -55,6 +57,31 @@ const $suggest_list_item = document.querySelector('#suggest-list-item');
 
 //DOM trendins terms section
 const $trendingStrings = document.querySelector('.section__search__trending-s');
+
+// DOM create GIFOs
+const $createGifSection = document.querySelector('#createGifSection');
+const $crearGifTitle = document.querySelector('#crearGif_title')
+const $crearGifText = document.querySelector('#crearGif_text');
+const $step1 = document.querySelector('#step-1');
+const $step2 = document.querySelector('#step-2');
+const $step3 = document.querySelector('#step-3');
+const $buttonComenzar = document.querySelector('#button--comenzar');
+const $buttonGrabar = document.querySelector('#button--grabar');
+const $buttonFinalizar = document.querySelector('#button--finalizar');
+const $buttonSubirGif = document.querySelector('#button--subirGif');
+const $timer = document.querySelector('#timer-recording');
+const $repeatBtn = document.querySelector('#repeatShot');
+const $rawgif = document.querySelector('#raw-gif');
+const $overlay = document.querySelector('#overlay')
+const $overlayInfo = document.querySelector('#overlay_info')
+const $overlayBar = document.querySelector('#overlay_bar')
+const $overlayStatusIcon = document.querySelector('#overlay_status-icon');
+const $overlayStatusText = document.querySelector('#overlay_status-text');
+const $video = document.querySelector('#recording_video');
+const $recordedGifo = document.querySelector('#recorded_gifo');
+
+const $camera = document.querySelector('#camera');
+const $celuloide = document.querySelector('#celuloide');
 
 
 const isMobile = {

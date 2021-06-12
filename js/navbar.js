@@ -24,12 +24,13 @@ function noScroll() {
   window.scrollTo(0, 0);
 }
 
+//favoritos
 $btnfav.addEventListener('click', (event) => {
-
-  $section__main.classList.add('hidden');
   $section__favorites.classList.remove('hidden');
-  
+  $section_gifos_slider.classList.remove('hidden');
+  $section__main.classList.add('hidden');
   $section__search.classList.add('hidden');
+  $createGifSection.classList.add('hidden');
   
   document.querySelector(".navbar__menu--burger").click();
   event.stopPropagation();
@@ -39,7 +40,9 @@ $btnfav.addEventListener('click', (event) => {
 $home.addEventListener('click', (event) => {
   $section__main.classList.remove('hidden');
   $section__search.classList.remove('hidden');
+  $section_gifos_slider.classList.remove('hidden');
   $section__favorites.classList.add('hidden');
+  $createGifSection.classList.add('hidden');
 
   $search_container.classList.add('hidden');
   $bar_input.value = '';
@@ -54,3 +57,15 @@ $home.addEventListener('click', (event) => {
   event.stopPropagation();
 
 });
+
+//boton crear tu propio gif
+$btncrear.addEventListener('click', (event)=>{
+  $section__main.classList.add('hidden');
+  $section__favorites.classList.add('hidden');
+  $section__search.classList.add('hidden');
+  $section_gifos_slider.classList.add('hidden');
+  $createGifSection.classList.remove('hidden');
+
+
+  event.stopPropagation();
+})
