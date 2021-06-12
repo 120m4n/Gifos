@@ -50,7 +50,7 @@ $buttonSubirGif.style.display = 'none';
 let recorder;
 let blob;
 let form = new FormData();
-let MyGifos = [];
+
 
 // seteo del timer
 let timer;
@@ -196,14 +196,15 @@ const uploeadCreatedGif = async () => {
 
 			// $overlayBar.querySelector('.btn-download').setAttribute('data-href', `https://media1.giphy.com/media/${uploadedGifId}/giphy.gif`);
 
-			MyGifos.push({
+			let data = {
                 id: uploadedGifId,
                 username: '',
                 title: `myGif${MyGifos.length}`,
                 display: `https://media1.giphy.com/media/${uploadedGifId}/giphy.gif`,
                 downlink: `https://media1.giphy.com/media/${uploadedGifId}/giphy.gif`
-            });
-            localStorage.setItem('myGifsStorage', JSON.stringify(MyGifos));
+            };
+            
+			MyGifos.saveToStorage(data);
 
 			// stop both video and audio
 			localStream.getTracks().forEach( (track) => {

@@ -24,6 +24,19 @@ function noScroll() {
   window.scrollTo(0, 0);
 }
 
+//mygifos
+$btnmygifos.addEventListener('click', (event) => {
+  $section__mygifos.classList.remove('hidden');
+  $section_gifos_slider.classList.remove('hidden');
+  $section__main.classList.add('hidden');
+  $section__search.classList.add('hidden');
+  $createGifSection.classList.add('hidden');
+  $section__favorites.classList.add('hidden');
+  
+  document.querySelector(".navbar__menu--burger").click();
+  event.stopPropagation();
+});
+
 //favoritos
 $btnfav.addEventListener('click', (event) => {
   $section__favorites.classList.remove('hidden');
@@ -31,6 +44,7 @@ $btnfav.addEventListener('click', (event) => {
   $section__main.classList.add('hidden');
   $section__search.classList.add('hidden');
   $createGifSection.classList.add('hidden');
+  $section__mygifos.classList.add('hidden');
   
   document.querySelector(".navbar__menu--burger").click();
   event.stopPropagation();
@@ -42,6 +56,7 @@ $home.addEventListener('click', (event) => {
   $section__search.classList.remove('hidden');
   $section_gifos_slider.classList.remove('hidden');
   $section__favorites.classList.add('hidden');
+  $section__mygifos.classList.add('hidden');
   $createGifSection.classList.add('hidden');
 
   $search_container.classList.add('hidden');
@@ -60,11 +75,13 @@ $home.addEventListener('click', (event) => {
 
 //boton crear tu propio gif
 $btncrear.addEventListener('click', (event)=>{
+  $createGifSection.classList.remove('hidden');
   $section__main.classList.add('hidden');
   $section__favorites.classList.add('hidden');
   $section__search.classList.add('hidden');
   $section_gifos_slider.classList.add('hidden');
-  $createGifSection.classList.remove('hidden');
+  $section__mygifos.classList.add('hidden');
+  
 
 
   event.stopPropagation();

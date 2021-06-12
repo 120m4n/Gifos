@@ -1778,6 +1778,253 @@ border-bottom: 1px solid #a39e9e;
   display: none;
 }
 
+.section__mygifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-primary);
+}
+
+.section__mygifos .section__mygifos--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.section__mygifos .section__mygifos--title h2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--color-font);
+  text-align: center;
+  line-height: 30px;
+}
+
+.section__mygifos .section__mygifos__result--empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 40px 0px;
+}
+
+.section__mygifos .section__mygifos__result--empty p {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 22px;
+  color: #50E3C2;
+  text-align: center;
+  line-height: 33px;
+}
+
+.section__mygifos .section__mygifos__result--empty.hidden {
+  display: none;
+}
+
+.section__mygifos .section__mygifos__gifcards--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 21px;
+  padding-right: 21px;
+  width: 100%;
+}
+
+.section__mygifos .section__mygifos__gifcards--container .gifcard {
+  width: 156px;
+  height: 120px;
+  position: relative;
+  margin: 12.5px 0px;
+}
+
+.section__mygifos .section__mygifos__gifcards--container .gifcard img.gifcard__img {
+  width: 156px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay {
+  display: none;
+}
+
+.section__mygifos .btn-more {
+  background-image: var(--btn-more);
+  width: 127px;
+  height: 50px;
+  margin: 75px 0px;
+  padding: 0 32.5px;
+  cursor: pointer;
+}
+
+.section__mygifos .btn-more:hover {
+  background-image: var(--btn-more-hover);
+}
+
+.section__mygifos .btn-more.hidden {
+  display: none;
+}
+
+.section__mygifos.hidden {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .section__mygifos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 557px;
+    height: 100%;
+    background-color: var(--color-primary);
+  }
+  .section__mygifos .section__mygifos--title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .section__mygifos .section__mygifos--title h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color-font);
+    text-align: center;
+    line-height: 30px;
+  }
+  .section__mygifos .section__mygifos__result--empty {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .section__mygifos .section__mygifos__result--empty p {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 22px;
+    color: #50E3C2;
+    text-align: center;
+    line-height: 33px;
+    width: 431px;
+  }
+  .section__mygifos .section__mygifos__result--empty.hidden {
+    display: none;
+  }
+  .section__mygifos .section__mygifos__gifcards--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 36px;
+    padding-left: 156px;
+    padding-right: 156px;
+    width: 100%;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard {
+    width: 260px;
+    height: 200px;
+    position: relative;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard img.gifcard__img {
+    width: 260px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background: rgba(87, 46, 229, 0.8);
+    top: 0;
+    left: 0;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__bar-btns {
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__info {
+    position: absolute;
+    bottom: 51px;
+    padding: 0px 18.5px;
+    color: #fff;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__info h4, .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__info h3 {
+    font-family: Roboto;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__info h4 {
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-bottom: 6px;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__info h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  .section__mygifos .section__mygifos__gifcards--container .gifcard:hover .gifcard-overlay {
+    display: block;
+    opacity: 1;
+  }
+}
+
 .txt-highlight {
   color: var(--color-highlight);
 }

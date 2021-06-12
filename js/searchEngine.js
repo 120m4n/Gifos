@@ -123,7 +123,9 @@ window.addEventListener('click', (event) => {
         
         if ($section__favorites.classList.contains('hidden')){
             if ($createGifSection.classList.contains('hidden')){
-                $section__main.classList.remove('hidden');
+                if ($section__mygifos.classList.contains('hidden')){
+                    $section__main.classList.remove('hidden');
+                }
             }
         }
         

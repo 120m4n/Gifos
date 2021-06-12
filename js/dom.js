@@ -5,6 +5,7 @@ const $btndark = document.querySelector("#navbar__btn--dark");
 const $btnfav = document.querySelector("#fav__btn");
 const $navbar__nav = document.querySelector(".navbar__nav");
 const $btncrear = document.querySelector("#crear__btn")
+const $btnmygifos = document.querySelector("#mygifos__btn");
 
 let menuDisplayed = false;
 let searchOffset;
@@ -82,6 +83,13 @@ const $recordedGifo = document.querySelector('#recorded_gifo');
 
 const $camera = document.querySelector('#camera');
 const $celuloide = document.querySelector('#celuloide');
+
+
+//DOM mygifos__section
+const $section__mygifos = document.querySelector(".section__mygifos");
+const $myGifsResults = document.querySelector("#mygifs-results");
+const $myGifsResultsEmpty = document.querySelector(".section__mygifos__result--empty");
+const $myGifsMoreBtn = document.querySelector('#mygifs-btn-more');
 
 
 const isMobile = {
