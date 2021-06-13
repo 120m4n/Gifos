@@ -1812,6 +1812,7 @@ border-bottom: 1px solid #a39e9e;
   color: var(--color-font);
   text-align: center;
   line-height: 30px;
+  margin-top: 8px;
 }
 
 .section__mygifos .section__mygifos__result--empty {
@@ -1832,6 +1833,7 @@ border-bottom: 1px solid #a39e9e;
   color: #50E3C2;
   text-align: center;
   line-height: 33px;
+  margin-top: 40px;
 }
 
 .section__mygifos .section__mygifos__result--empty.hidden {

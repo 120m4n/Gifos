@@ -2,7 +2,7 @@
 $searchMoreBtn.addEventListener('click', (event) => {
     searchOffset += 12;
     queryText = $search__text.innerHTML;
-    console.log(queryText);
+    //console.log(queryText);
     urlSrch = `${urlApi}/gifs/search?api_key=${api_key}&q=${queryText}&limit=12&offset=${searchOffset}`;
     getApiInfo(urlSrch).then(data => {
         addGifsToContainer(data, $search_gifs_container);

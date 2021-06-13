@@ -94,7 +94,7 @@ $buttonComenzar.addEventListener('click', getStreamAndRecord);
 
 //  función para empezar
 const createGifo = () => {
-	console.log('está grabando');
+	//console.log('está grabando');
 	$buttonGrabar.style.display = 'none';
 	$buttonFinalizar.style.display = 'block';
 	$timer.classList.remove('hidden');
@@ -151,7 +151,7 @@ const uploeadCreatedGif = async () => {
 		.then((myGif) => {
 
 			let uploadedGifId = myGif.data.id
-			console.log(myGif.data.id);
+			//console.log(myGif.data.id);
 
 			
 			$overlayStatusIcon.src = '../assets/check.svg';

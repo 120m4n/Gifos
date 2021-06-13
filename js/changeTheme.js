@@ -35,13 +35,13 @@ $btndark.addEventListener('click', event => {
     if (!darkTheme) {
         $btndark.innerText = 'Modo Diurno'
         changeDarkMode('theme--light','theme--dark')
-        console.log('modo nocturno')
+        //console.log('modo nocturno')
         darkTheme = true;
 
     }else {
         $btndark.innerText = 'Modo Nocturno'
         changeDarkMode('theme--dark','theme--light')
-        console.log('modo diurno')
+        //console.log('modo diurno')
         darkTheme = false;
         
     }
