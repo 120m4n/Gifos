@@ -14,8 +14,13 @@ const addEventsToFavButton = (gifObj) => {
 
 
 	} else if (element.classList.contains('trash')) {
-		//TODO DELETE FROM FAVORITES AREA 
-		console.log('Delete from FAVORITES AREA');
+		//TODO DELETE FROM myGifos AREA 
+		console.log('Delete from myGifos AREA');
+		MyGifos.deleteFromStorage(gifObj);
+		//auto close form
+		setTimeout(function() {
+			$popupGifContainer.querySelector(".btn-close").click();
+		  }, 450);
 
 	} else {
 		//Save to favGifs LocalStorage
@@ -27,6 +32,7 @@ const addEventsToFavButton = (gifObj) => {
 	}
 	element.classList.toggle('fav-active');
 	updateFavs();
+	updateMyGifos();
 }
 
 // update state of fav-btn
@@ -44,6 +50,10 @@ const updateStateGifcard = ()=>{
         }
 
     });
+
+	// mygifos section gifCards
+
+
 }
 
 
@@ -57,6 +67,15 @@ const maximizeGif = (gifObj) => {
 	}else{
 		$popupGifContainer.querySelector('.btn-fav').classList.remove('fav-active');
 	}
+
+	if (MyGifos.exist(gifObj)){
+		console.log('add trash class')
+		$popupGifContainer.querySelector('.btn-fav').classList.add('trash');
+	}else{
+		$popupGifContainer.querySelector('.btn-fav').classList.remove('trash');
+	}
+
+
 	
 	$popupGifContainer.querySelector('.gif_user').innerHTML = gifObj.username;
 	$popupGifContainer.querySelector('.gif_title').innerHTML = gifObj.title; 

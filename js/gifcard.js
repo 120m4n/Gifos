@@ -113,8 +113,13 @@ const addGifsToContainer = (data,container) => {
                 deleteFromStorage(gifId);
 
             } else if (btnFav.classList.contains('trash')) {
-                //TODO DELETE FROM FAVORITES AREA 
-                console.log('Delete from FAVORITES AREA');
+                //TODO DELETE FROM MyGifos AREA 
+                console.log('Delete from MyGifos AREA');
+                MyGifos.deleteFromStorage(gifObj);
+                //auto close form
+                setTimeout(function() {
+                    $popupGifContainer.querySelector(".btn-close").click();
+                  }, 450);
 
             } else {
                 //Save to favGifs LocalStorage
@@ -124,6 +129,7 @@ const addGifsToContainer = (data,container) => {
             }
             btnFav.classList.toggle('fav-active');
             updateFavs();
+            updateMyGifos();
             
             event.stopPropagation();
 
@@ -139,6 +145,11 @@ const addGifsToContainer = (data,container) => {
 
         //console.log(newGifcard);
         container.appendChild(newGifcard);
+    });
+
+    //change gifcard fav btn icon to trahs to e
+    $myGifsResults.querySelectorAll('.btn-fav').forEach(element =>{
+        element.classList.add('trash');
     });
 
     updateStateGifcard();

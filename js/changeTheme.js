@@ -26,7 +26,7 @@ const updateThemeLocalStore = () => {
 }
 
 
-
+//change the theme  darktheme <>lighttheme
 
 $btndark.addEventListener('click', event => {
        

@@ -10,6 +10,7 @@ const $btnmygifos = document.querySelector("#mygifos__btn");
 let menuDisplayed = false;
 let searchOffset;
 let offsetFavs = 12;
+let offsetMyGifos = 12;
 
 //DOM main section
 const $section__main = document.querySelector("#section-main");
@@ -91,7 +92,7 @@ const $myGifsResults = document.querySelector("#mygifs-results");
 const $myGifsResultsEmpty = document.querySelector(".section__mygifos__result--empty");
 const $myGifsMoreBtn = document.querySelector('#mygifs-btn-more');
 
-
+//CHECK IF MOBILE NAVIGATOR IS USE
 const isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
@@ -114,7 +115,6 @@ const isMobile = {
 };
 
 
-// if( isMobile.any() ) alert('Mobile');
 
 function getCssProperty(elmId, property){
     var elem = document.getElementById(elmId);

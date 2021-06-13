@@ -97,6 +97,16 @@ function storageAvailable(type) {
     }
 }
 
+MyGifos.exist = function(data){
+    let id = data.id;
+    let obj = this.find(o => o.id === id);
+    if (obj === undefined) {
+        return false;
+    }else{
+        return true;
+    }
+}
+
 MyGifos.securePush = function(data) {
     let id = data.id;
     let obj = this.find(o => o.id === id);
@@ -136,3 +146,16 @@ MyGifos.deleteFromStorage = function(data){
 
 };
 
+//test MyGifos funcionalidad
+const testMyGifos = () => {
+    for (var i = 0; i < 14; i++) {
+        let tempdata = {
+            id: 1,
+            display: 'https://media.giphy.com/media/DDzfVFfmP2yWsTjjrI/giphy.gif',
+            downlink: 'https://media.giphy.com/media/DDzfVFfmP2yWsTjjrI/giphy.gif',
+            title: 'myGif_'+i,
+            username: '120m4n'}
+        tempdata.id = i;
+        MyGifos.saveToStorage(tempdata);
+    }
+}

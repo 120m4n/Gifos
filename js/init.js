@@ -75,7 +75,7 @@ getApiInfo(urlTrendingGifs).then(data => {
 }).catch(console.error);
 
 
-
+//busqueda texto en la api de giphy
 
 function searchForText(queryText) {
 

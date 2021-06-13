@@ -65,6 +65,8 @@ $home.addEventListener('click', (event) => {
   defaultSearchSection();
   offsetFavs = 12;
   updateFavs();
+  offsetMyGifos = 12;
+  updateMyGifos();
   let left = getCssProperty("navbar__nav", "left")
   if (left === '0px'){
     document.querySelector(".navbar__menu--burger").click();

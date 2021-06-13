@@ -1,5 +1,6 @@
 /* -------------------------------------------------------------------------- */
-/*                               GIPHY API INFO                               */
+/*                               VARIABLES INICIALES                          */
+/*                                ENDPOINTS GIPHY                             */
 /* -------------------------------------------------------------------------- */
 
 /* ------------------------- FORMATS ------------------------- */
@@ -10,8 +11,9 @@ let api_key = 'deN938U4Ef66YPDtShWaEralFVTOaOlc',
     urlSrchSuggests = `${urlApi}/gifs/search/tags?api_key=${api_key}&q=`;
     urlTrendingTerms = `${urlApi}/trending/searches?api_key=${api_key}`;
 
+ 
 // --endpoint upload gif
-const uploadGifEndpoint = 'https://upload.giphy.com/v1/gifs';
+let uploadGifEndpoint = 'https://upload.giphy.com/v1/gifs';
     
 
 async function getApiInfo(url) {

@@ -1,4 +1,4 @@
-
+//update favorites gits in favorite section
 
 const updateFavs = ()=> {
  

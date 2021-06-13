@@ -991,7 +991,7 @@ border-bottom: 1px solid #a39e9e;
   }
   .section__favorites .section__favorites__gifcards--container .gifcard .gifcard-overlay__info {
     position: absolute;
-    bottom: 51px;
+    bottom: 1.5em;
     padding: 0px 18.5px;
     color: #fff;
   }
@@ -2001,7 +2001,7 @@ border-bottom: 1px solid #a39e9e;
   }
   .section__mygifos .section__mygifos__gifcards--container .gifcard .gifcard-overlay__info {
     position: absolute;
-    bottom: 51px;
+    bottom: 1.5em;
     padding: 0px 18.5px;
     color: #fff;
   }
